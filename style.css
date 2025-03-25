@@ -154,12 +154,20 @@ body {
     gap: 8px;
 }
 
+.button-text {
+    font-size: 16px;
+}
+
 .main__buttons {
     display: flex;
     align-items: center;
     margin-right: 16px;
     margin-left: 16px;
     overflow: scroll;
+}
+
+.main__button-label:hover {
+    cursor: pointer;
 }
 
 .main__content-fade {
@@ -198,6 +206,7 @@ body {
 
 .main__description-text, .main__description-button-wrapper {
     margin-left: 16px;
+    font-size: 14px;
 }
 
 .main__description-button {
@@ -228,6 +237,10 @@ body {
     border-radius: 6px;
 }
 
+.main__buttons::-webkit-scrollbar {
+    display: none;
+}
+
 
 
    @media (max-width: 767px) {
@@ -253,7 +266,11 @@ body {
     }
 
     .main__description {
-        margin-top: 24px;
+        margin-top: 8px;
+    }
+
+    .main__description-image {
+        border-radius: 0;
     }
 
    }
@@ -263,7 +280,7 @@ body {
     .main__description {
         flex-wrap: nowrap;
         column-gap: 48px;
-        margin-top: 32px;
+        margin-top: 16px;
         margin-right: 16px;
     }
 
@@ -314,7 +331,7 @@ body {
     }
 
     .main__description {
-        margin-top: 16px;
+        margin-top: 0;
     }
 
     .main__description-text {
@@ -324,5 +341,6 @@ body {
     .main__content-fade {
         display: none;
     }
+
 
    }
