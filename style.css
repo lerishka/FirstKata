@@ -170,10 +170,6 @@ h1 {
     overflow: scroll;
 }
 
-.main__button-label {
-    margin-bottom: -4px;
-}
-
 .main__button-label:hover {
     cursor: pointer;
 }
@@ -342,11 +338,10 @@ h1 {
 
     .main__buttons {
         flex-wrap: wrap;
-        row-gap: 16px
     }
 
     .main__content{
-        margin-top: 36px;
+        margin-top: 32px;
         margin-right: 16px;
     }
 
@@ -356,6 +351,7 @@ h1 {
 
     .main__description-text {
         max-width: 490px;
+        margin-top: 0;
     }
     
     .main__content-fade {
@@ -372,6 +368,10 @@ h1 {
 
     .main__buttons {
         margin-left: 32px;
+    }
+
+    .main__button {
+        margin-bottom: 8px;
     }
 
    }
