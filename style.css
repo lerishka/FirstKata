@@ -33,10 +33,14 @@ body {
     margin-right: auto;
 }
 
+h1 {
+    font-size: 28px;
+}
+
 .header {
-    height: 88px;
+    height: 72px;
     background-color: #ffffff;
-    padding: 24px 16px 0 16px;
+    padding: 16px 16px 0 16px;
 }
 
 .header__content {
@@ -166,6 +170,10 @@ body {
     overflow: scroll;
 }
 
+.main__button-label {
+    margin-bottom: -4px;
+}
+
 .main__button-label:hover {
     cursor: pointer;
 }
@@ -289,6 +297,18 @@ body {
         width: 100%;
     }
 
+    .main__description-text, .main__description-button-wrapper {
+        margin-left: 24px;
+    }
+
+    .main__title::before {
+        margin-right: 24px;
+    }
+
+    .main__buttons {
+        margin-left: 24px;
+    }
+
    }
 
    @media (max-width: 1119px) {
@@ -342,5 +362,16 @@ body {
         display: none;
     }
 
+    .main__description-text, .main__description-button-wrapper {
+        margin-left: 32px;
+    }
+
+    .main__title::before {
+        margin-right: 30px;
+    }
+
+    .main__buttons {
+        margin-left: 32px;
+    }
 
    }
